@@ -1,19 +1,21 @@
 package com.qaminds;
+import java.util.*;
 
 public class Main {
-
     public static void main(String[] args) {
-	 //Entrenador entrenador = new Entrenador();
-     //entrenador.entrenar();
-       // char unicode = '\u007B';
-        //int ascciValue = 146;
-        //System.out.println("Unicode symbol = " + unicode);
-        //System.out.println("ASCII value = " + (char)ascciValue);
+        Empleado empleado =  new Empleado("Jesus", "Serrano");
+        empleado.imprimirNombre();
+        empleado.aumentaSueldo(800.00);
+        empleado.restaDiaVacacion(5);
+        empleado.aumentaSueldo(10);
+        System.out.println(empleado.toString());
 
-        Television tv = new Television();
 
-        Television tv2 = new Television("LG", 42, 1324.56);
+        Empleado empleado2 =  new Empleado("Miguel", "Ruiz", 1200);
+        empleado2.imprimirNombre();
+        empleado2.restaDiaVacacion(1);
+        empleado2.aumentaSueldo(50);
+        System.out.println(empleado2.toString());
 
-        Television tv3 = new Television("Samsung", 60, 18999, "LCD");
     }
 }
